@@ -6,7 +6,7 @@ Check [releases](https://github.com/RedCraft86/Genshin_World_Map/releases) if yo
 
 **Teyvat Map Combiner** takes the tiles and combines them into one single image, this process is a lot quicker than the downloading but the saving process takes a minute or two as the final image is very large.
 
-Places like Enkanomiya and Chasm does not have maps that keep on updating and therefore does not have scripts for them, check [other map releases]([https://github.com/RedCraft86/Genshin_World_Map/releases](https://github.com/RedCraft86/GI_World_Map/releases/tag/other_maps)) for the map images.
+Places like Enkanomiya and Chasm does not have maps that keep on updating and therefore does not have scripts for them, check [other map releases](https://github.com/RedCraft86/GI_World_Map/releases/tag/other_maps) for the map images.
 
 If you're downloading the scripts, make sure to put both scripts in the same folder as the paths are made to be specific, you can have them anywhere, but they need to be together. First run the Teyvat_Map_Downloader.py and once it finishes, run the Teyvat_Map_Combiner.py
 
