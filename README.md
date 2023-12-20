@@ -7,4 +7,4 @@ Teyvat_Map_Combiner takes the tiles and combines them into one single image, thi
 If you're downloading the scripts, make sure to put both scripts in the same folder as the paths are made to be specific, you can have them anywhere, but they need to be together. First run the Teyvat_Map_Downloader.py and once it finishes, run the Teyvat_Map_Combiner.py
 
 # Note
-This requires [The Python Requests Module](https://pypi.org/project/requests/) for the map downloader and [Pillow (Python Image Library Fork)](https://pillow.readthedocs.io/en/stable/reference/Image.html) for the map combiner
+This requires [The Python Requests Module](https://pypi.org/project/requests/) for the map downloader and [Pillow (Python Image Library Fork)](https://pillow.readthedocs.io/en/stable/installation.html) for the map combiner
