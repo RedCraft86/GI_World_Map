@@ -3,6 +3,8 @@ import pathlib
 import requests
 import shutil
 
+# I'd suggest you keep this on unless most of the tiles you have are corrupted. 
+# Having this true will allow you to skip the tiles you already have if you decide to stop and rerun it at any point. 
 patchingMode = True
 
 minX = -56
