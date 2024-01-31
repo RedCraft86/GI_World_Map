@@ -13,5 +13,5 @@ Places like Enkanomiya and Chasm does not have maps that keep on updating and th
 If you're downloading the scripts, make sure to put both scripts in the same folder as the paths are made to be specific, you can have them anywhere, but they need to be together. First run the Teyvat_Map_Downloader.py and once it finishes, run the Teyvat_Map_Combiner.py
 
 # Requirements 
-The scripts were made and tested with Python 3.12, I can't guarantee that it will work for other versions but it should, the main limitations may be the following external modules.
+The scripts were made and tested with Python 3.12, I can't guarantee that it will work for other versions but it should work. The main limitations may be the following external modules:
 [The Python Requests Module](https://pypi.org/project/requests/) is needed for the map downloader and [Pillow (Python Image Library Fork)](https://pillow.readthedocs.io/en/stable/installation.html) is needed for the map combiner.
