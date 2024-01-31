@@ -29,7 +29,6 @@ for x in range(minX, maxX):
             tileCount += 1
         else: 
             result = requests.get(imgURL, headers=headers, stream=True)
-
             if (result.status_code != 404):
                 with open(filePath, 'wb') as outFile:
                     shutil.copyfileobj(result.raw, outFile)
@@ -40,7 +39,7 @@ for x in range(minX, maxX):
                 is404 = True
 
         # Logging
-        print("Total: {0}/{1}\t| {2}  ({3}, {4}) => ({5}, {6})\t| At URL: {7}".format(tileCount, total, "404" if is404 else "Tile", x, y, x - minX, y - minY, imgURL))
+        print("Total: {0}/{1} \t\t| {2}  ({3}, {4}) => ({5}, {6}) \t\t| At URL: {7}".format(tileCount, total, "404" if is404 else "Tile", x, y, x - minX, y - minY, imgURL))
 
 print("All tiles successfully downloaded to directory:")
 print(thisDir.replace("\\", "/") + "/Tiles/Teyvat")
