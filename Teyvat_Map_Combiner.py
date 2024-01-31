@@ -31,7 +31,7 @@ for file in fileNames:
     fileNum += 1
 
     # Logging
-    print("{0} {1}/{2}  |  Position ({3}, {4})  |  File {5}".format( "Skipped" if bSkipped else "Processed", fileNum, len(fileNames), sizeXY * xPos, sizeXY * yPos, file))
+    print("{0} {1}/{2} \t\t| Position ({3}, {4}) \t\t| File {5}".format( "Skipped" if bSkipped else "Processed", fileNum, len(fileNames), sizeXY * xPos, sizeXY * yPos, file))
 
 print("Saving, Please Wait...")
 canvas.rotate(90).save(thisDir + "/Full/Teyvat.png")
