@@ -18,7 +18,7 @@ thisDir = str(pathlib.Path(__file__).parent.resolve())
 pathlib.Path(thisDir + "/Tiles/Teyvat/").mkdir(parents=True, exist_ok=True)
 nameFmt = thisDir + "/Tiles/Teyvat/{0}_{1}.jpg"
 
-urlFmt = "https://game-cdn.appsample.com/gim/map-teyvat/v42-rc2/15/tile-{0}_{1}.jpg"
+urlFmt = "https://game-cdn.appsample.com/gim/map-teyvat/v44-rc1/15/tile-{0}_{1}.jpg"
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 for x in range(minX, maxX):
     for y in range(minY, maxY):
@@ -29,17 +29,18 @@ for x in range(minX, maxX):
             tileCount += 1
         else: 
             result = requests.get(imgURL, headers=headers, stream=True)
-            if result.status_code != 404:
+
+            if (result.status_code != 404):
                 with open(filePath, 'wb') as outFile:
                     shutil.copyfileobj(result.raw, outFile)
                 del result
                 tileCount += 1
-            else: 
+            else:
                 total -= 1
                 is404 = True
 
         # Logging
-        print("Total: {0}/{1}  |  {2} ({3}, {4}) => ({5}, {6})  |  At URL: {7}".format(tileCount, total, "404" if is404 else "Tile", x, y, x - minX, y - minY, imgURL))
+        print("Total: {0}/{1}\t| {2}  ({3}, {4}) => ({5}, {6})\t| At URL: {7}".format(tileCount, total, "404" if is404 else "Tile", x, y, x - minX, y - minY, imgURL))
 
 print("All tiles successfully downloaded to directory:")
 print(thisDir.replace("\\", "/") + "/Tiles/Teyvat")
