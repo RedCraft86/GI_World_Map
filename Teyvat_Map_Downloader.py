@@ -18,7 +18,7 @@ thisDir = str(pathlib.Path(__file__).parent.resolve())
 pathlib.Path(thisDir + "/Tiles/Teyvat/").mkdir(parents=True, exist_ok=True)
 nameFmt = thisDir + "/Tiles/Teyvat/{0}_{1}.jpg"
 
-urlFmt = "https://game-cdn.appsample.com/gim/map-teyvat/v44-rc1/15/tile-{0}_{1}.jpg"
+urlFmt = "https://game-cdn.appsample.com/gim/map-teyvat/v44-rc2/15/tile-{0}_{1}.jpg"
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 for x in range(minX, maxX):
     for y in range(minY, maxY):
