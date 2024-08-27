@@ -1,3 +1,6 @@
+# This Repo is Discontinued!
+I no longer have the time to maintain this anymore so this repo will be archived from now on. If you want a very high resolution map (even higher res than the interactive one) refer to [https://homdgcat.wiki/gi/map](https://homdgcat.wiki/gi/map?lang=EN)
+
 # Genshin World Map
 A map downloader and combiner to get the Genshin Impact world map.
 Check [releases](https://github.com/RedCraft86/Genshin_World_Map/releases) if you only care about the map images and not the process.
